@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff0f6">
+<title>My V My World 💗</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:18px;font-family:system-ui,sans-serif;color:#553449;background:linear-gradient(140deg,#ffe6f0,#fff8ed,#eee5ff);text-align:center}
+main{max-width:760px;margin:auto}
+h1{font-size:clamp(2.5rem,9vw,4rem);color:#c04f83;margin:18px 0}
+h2{color:#b34e7b}
+.card{background:#ffffffdf;border:1px solid #f4cddd;border-radius:25px;padding:22px;margin:18px 0;box-shadow:0 10px 35px #b65c8515}
+button{border:0;border-radius:30px;padding:13px 20px;margin:5px;background:#f276a5;color:white;font-weight:bold;font-size:1rem;cursor:pointer}
+button:active{transform:scale(.96)}
+.secondary{background:#fff;color:#a34872;border:1px solid #efc4d6}
+.hidden{display:none!important}
+.small{color:#986e83;font-size:.9rem;line-height:1.6}
+#arena{height:360px;position:relative;overflow:hidden;border-radius:22px;border:3px solid white;background:linear-gradient(#bce1ff,#fbd9eb 60%,#b7e7bd 60%);touch-action:manipulation}
+#joel{position:absolute;left:45%;top:45%;font-size:3.8rem;background:transparent;box-shadow:none;padding:5px;transition:left .12s,top .12s}
+#gift{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);font-size:4rem}
+.meter{height:9px;max-width:350px;margin:15px auto;background:#f4d3e2;border-radius:20px;overflow:hidden}
+#bar{height:100%;width:0;background:#ee78a6;transition:width .2s}
+.letter{text-align:left;white-space:pre-line;line-height:1.9;font-family:Georgia,serif;background:#fffaf1;border:1px dashed #dfb3c5;border-radius:15px;padding:18px}
+.manga{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.panel{border:3px solid #553449;border-radius:8px;background:#fff7fb;padding:12px;box-shadow:3px 3px #e7c3d4}
+.scene{font-size:2.5rem}
+.panel p{line-height:1.5;font-weight:bold}
+.call-screen{position:relative;max-width:430px;min-height:380px;margin:16px auto;border:8px solid #493247;border-radius:34px;background:linear-gradient(160deg,#d7eaff,#ffe1ed 55%,#f5e4ff);padding:20px 14px;overflow:hidden;box-shadow:0 12px 28px #75445d25}
+.call-top{display:flex;align-items:center;justify-content:space-between;font-size:.85rem;font-weight:bold}
+.call-avatar{position:relative;margin:22px auto 12px;width:150px;height:170px;border-radius:80px 80px 48px 48px;background:#f2c2a5;border:5px solid #fff;box-shadow:0 8px 0 #e7b4cb;display:flex;align-items:center;justify-content:center;font-size:5rem;animation:bob 2s ease-in-out infinite}
+.call-avatar:before{content:"";position:absolute;top:-10px;left:17px;right:17px;height:55px;background:#33263c;border-radius:55% 55% 25% 25%;z-index:0}
+.call-avatar span{position:relative;z-index:1;margin-top:25px}
+.call-bubble{background:#ffffffdf;border-radius:18px;padding:12px;margin:12px auto;max-width:300px;font-weight:700;line-height:1.5}
+.call-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:16px}
+.kiss{font-size:3rem;animation:kiss .65s ease-in-out 3}
+.manga-book{text-align:left}
+.manga-chapter{margin:16px 0;padding:16px;border:2px solid #edc6d7;border-radius:16px;background:linear-gradient(135deg,#fffafd,#fff5f8)}
+.manga-chapter h3{margin:0 0 8px;color:#a63e70}
+.manga-chapter p{line-height:1.75;margin:7px 0}
+.manga-chapter .chapter-art{text-align:center;font-size:2rem;margin:8px 0}
+.pdf-viewer{width:100%;height:620px;border:2px solid #edc6d7;border-radius:14px;background:#fff}
+.manga-page-image{display:block;width:100%;max-width:760px;height:auto;margin:14px auto;border:1px solid #edc6d7;border-radius:10px;box-shadow:0 5px 18px rgba(120,50,80,.12)}
+.manga-page-label{text-align:center;color:#a63e70;font-weight:bold;margin:18px 0 6px}
+@media(max-width:520px){.pdf-viewer{height:480px}}
+
+#finalGift{font-size:4rem;animation:pop .7s ease-out}
+footer{padding:20px;color:#9b6d83;font-size:.85rem}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-8px) rotate(2deg)}}
+@keyframes kiss{0%{transform:scale(.7) rotate(-10deg)}50%{transform:scale(1.3) rotate(10deg)}100%{transform:scale(1)}}
+@keyframes pop{0%{transform:scale(.2);opacity:0}80%{transform:scale(1.15)}100%{transform:scale(1);opacity:1}}
+@media(max-width:520px){body{padding:10px}.card{padding:17px}.manga{grid-template-columns:1fr 1fr}#arena{height:330px}.call-screen{min-height:360px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<p>✨ A tiny universe made just for you ✨</p>
+<h1>My V My World 💗</h1>
+<p>Two years of us. One little game. One very big love.</p>
+<p><b>Ready to catch your Joel, Viya? 🎁</b></p>
+</header>
+
+<section class="card" id="intro">
+<div style="font-size:4rem">🎀💌🎀</div>
+<h2>A gift is waiting for you!</h2>
+<p>Your silly Joel is running away with your anniversary gift. Catch him to unlock it! 🤭</p>
+<button onclick="startGame()">Start the chase 💨</button>
+</section>
+
+<section class="card hidden" id="gameCard">
+<h2 id="levelText">Level 1 of 3</h2>
+<p id="tease">Hehe, catch me first, kunjava! 🤭</p>
+<div class="meter"><div id="bar"></div></div>
+<div id="arena">
+<div style="position:absolute;top:15px;left:20px;font-size:2rem">☁️</div>
+<div style="position:absolute;top:15px;right:20px;font-size:2rem">☀️</div>
+<div style="position:absolute;bottom:10px;left:10px;font-size:2rem">🌼</div>
+<div style="position:absolute;bottom:10px;right:15px;font-size:2rem">🌸</div>
+<button id="joel" aria-label="Catch Joel" onclick="catchJoel()">🏃🏻‍♂️🎁</button>
+<div id="gift" class="hidden">🎁💖</div>
+</div>
+<p class="small">Tap Joel several times to catch him! Each level gets faster.</p>
+<button class="secondary" onclick="hint()">Hint 🥺</button>
+<button class="secondary" onclick="startLevel()">Restart level ↻</button>
+</section>
+
+<section class="card hidden" id="giftCard">
+<div style="font-size:4rem">💖✨🎁✨💖</div>
+<h2>You caught me, Viya!</h2>
+<p>Okay, okay, doll… you win! This gift was always yours. 🥹</p>
+<button onclick="showSection('letterCard')">Open your gift 💝</button>
+</section>
+
+<section class="card hidden" id="letterCard">
+<div style="font-size:3rem">💌</div>
+<h2>To my Viya, my world</h2>
+<p class="small">A letter from your Joel, on our second anniversary</p>
+<div class="letter">My dearest Viya,
+
+Happy two years to us, my doll, bommakutty, kunjava, shuttumani, my Meenu. ❤️
+
+Who would've thought that two strangers meeting on Y99 would become this much of a world to each other? We started with conversations, exchanged Instagram, and somehow those talks turned into nights I never wanted to end. Then you accepted me as your wife, and my heart found a home in you.
+
+You are my girlfriend, my wife, my best friend, my master, my comfort, and my favourite person to tease. I love your pure soul and all the little things that make you you.
+
+We've had fights and difficult moments, but I want the kind of love where we keep choosing each other, listen, learn, forgive, laugh again, and stand side by side.
+
+I promise to keep trying to love you better, respect you, support your dreams, and build a future with you one day at a time. I can't predict every chapter, but I want to write them with you.
+
+Two years down, and still my favourite notification, my favourite person, my V, my whole little world.
+
+Forever your Joel. 💗</div>
+<button onclick="showSection('mangaCard')">Read our manga 📖</button>
+</section>
+
+<section class="card hidden" id="mangaCard">
+<h2>My V, My World — Our Anniversary Manga 🌸</h2>
+<p class="small">Our story, just as written in the anniversary manga you made for Viya. Read every chapter here, or open the original five-page manga PDF.</p>
+<div class="manga-book">
+<div class="manga-chapter">
+<h3>Chapter 1 — A Complete Stranger</h3>
+<div class="chapter-art">🌐💬🌙</div>
+<p>It began on Y99, a chatting site, with two people who knew nothing about each other.</p>
+<p>One conversation became many, and soon the hours slipped away as if neither of us wanted to say goodnight.</p>
+</div>
+<div class="manga-chapter">
+<h3>Chapter 2 — From Chat to Instagram</h3>
+<div class="chapter-art">📱💗📱</div>
+<p>Then you gave me your Instagram, and I joined you there. Our little world grew with every message, every photo, every joke, and every new thing we discovered about each other.</p>
+</div>
+<div class="manga-chapter">
+<h3>Chapter 3 — Our Little World</h3>
+<div class="chapter-art">🤭🫶💞</div>
+<p>We had our own playful dynamic: you were my confident, dominant one, and I loved being your devoted, submissive partner.</p>
+<p>Beneath the teasing and the nicknames, we were slowly building trust, tenderness, and a love that was ours alone.</p>
+</div>
+<div class="manga-chapter">
+<h3>Chapter 4 — Falling in Love, One Night at a Time</h3>
+<div class="chapter-art">🌙💬✨</div>
+<p>We talked through the night about our dreams, fears, pasts, and silly little things. A stranger became my favourite person.</p>
+<p>Our conversations grew into something deeper, and one day you accepted me as your wife. I still treasure that moment.</p>
+</div>
+<div class="manga-chapter">
+<h3>Chapter 5 — Two Pure Souls Learning Each Other</h3>
+<div class="chapter-art">🥹🤝❤️</div>
+<p>You showed me your gentle heart, and I wanted to be there whenever sadness found you. You were there for me, too, when my own days felt heavy.</p>
+<p>We learned each other's bright sides and difficult sides, and chose to keep understanding one another.</p>
+</div>
+<div class="manga-chapter">
+<h3>Chapter 6 — My Bommakutty</h3>
+<div class="chapter-art">🎀🐻💗</div>
+<p>To me, you are my doll—my bommakutty, my kunjava, my shuttumani, my Meenu.</p>
+<p>You are adorable, caring, and precious to me. You are my hubby, my wife, my best friend, my master, my comfort, and my everything.</p>
+</div>
+<div class="manga-chapter">
+<h3>Chapter 7 — Two Years of Us</h3>
+<div class="chapter-art">🎂💞🌷</div>
+<p>Now we are reaching two years together. Two years of late-night talks, laughter, memories, little moments, and a love that keeps growing.</p>
+<p>We may not always agree, but we keep choosing to listen, communicate, and stand beside each other.</p>
+</div>
+<div class="manga-chapter">
+<h3>Chapter 8 — A Promise for Every Tomorrow</h3>
+<div class="chapter-art">🌅🫶💍</div>
+<p>I don't want just a beautiful story from the past. I want the ordinary tomorrows, the hard days we get through together, the adventures we have not had yet, and a whole lifetime of memories with you.</p>
+<p>Whatever life brings, I want us to face it as a team.</p>
+</div>
+<div class="manga-chapter">
+<h3>A Letter to My Viya 💌</h3>
+<p><b>My Viya, my world,</b></p>
+<p>Thank you for coming into my life when we were just two strangers on a chatting site. I never imagined that one conversation would lead me to someone who means this much to me.</p>
+<p>Thank you for trusting me, for letting me know the real you, for being there when I am sad, and for letting me be there for you. Thank you for every late-night conversation, every laugh, every silly nickname, and every moment that became a memory I want to keep.</p>
+<p>You are not only my hubby or my wife. You are my best friend, my master, my safe place, and my favourite person. I love your pure heart, your kindness, and all the little things that make you you.</p>
+<p>We may have disagreements sometimes, but I promise to keep communicating, learning, and choosing us. I want to grow with you, support your dreams, celebrate your happiness, and hold your hand through the difficult days.</p>
+<p>I want to spend my life with you—not only the big, magical moments, but the ordinary days too. More laughter, more cuddles, more adventures, more memories, and more years of being us.</p>
+<p>Happy anniversary in advance, my love. October 23 is our special day, but every day with you is a gift.</p>
+<p><b>Forever yours,<br>Your devoted wife ❤</b></p>
+<p style="text-align:center;font-size:1.2rem"><b>My V. My World. My forever. ♥</b></p>
+</div>
+</div>
+<div class="card" style="padding:14px;margin-top:18px">
+<h3>Read the original manga PDF 📖</h3>
+<p class="small">The original five-page anniversary manga is included in this website folder as <b>anniversary-manga.pdf</b>.</p>
+<a href="anniversary-manga.pdf" target="_blank" rel="noopener" style="display:inline-block;background:#f276a5;color:white;padding:12px 18px;border-radius:25px;text-decoration:none;font-weight:bold;margin:6px">Open / download original manga PDF ↗</a>
+<div class="manga-page-gallery" aria-label="Original anniversary manga pages"><p class="manga-page-label">Original Manga — Page 1</p><img class="manga-page-image" src="manga-page-1.jpg" alt="My V My World anniversary manga, page 1" loading="lazy"><p class="manga-page-label">Original Manga — Page 2</p><img class="manga-page-image" src="manga-page-2.jpg" alt="My V My World anniversary manga, page 2" loading="lazy"><p class="manga-page-label">Original Manga — Page 3</p><img class="manga-page-image" src="manga-page-3.jpg" alt="My V My World anniversary manga, page 3" loading="lazy"><p class="manga-page-label">Original Manga — Page 4</p><img class="manga-page-image" src="manga-page-4.jpg" alt="My V My World anniversary manga, page 4" loading="lazy"><p class="manga-page-label">Original Manga — Page 5</p><img class="manga-page-image" src="manga-page-5.jpg" alt="My V My World anniversary manga, page 5" loading="lazy"></div>
+</div>
+<button onclick="showSection('callCard')">Video Call Joel 📱💗</button>
+</section>
+
+<section class="card hidden" id="callCard">
+<div style="font-size:2.5rem">📱💞</div>
+<h2>Incoming video call…</h2>
+<p>JOEL 💗 is calling his wifey!</p>
+<div class="call-screen">
+<div class="call-top"><span>● LIVE CALL</span><span id="callTime">00:02</span><span>🔋 100%</span></div>
+<div class="call-avatar" id="callAvatar"><span>🥹</span></div>
+<div class="call-bubble" id="callLine">Wifeyyy… you made it! I have one last surprise for you. 🥺💗</div>
+<div class="call-actions">
+<button class="secondary" onclick="changeCallLine()">Talk to Joel 💬</button>
+<button onclick="kissJoel()">Kiss Joel 💋</button>
+</div>
+<p class="small">A pretend anime video call made just for you — it doesn't turn on your camera.</p>
+</div>
+</section>
+
+<section class="card hidden" id="kissCard">
+<div class="kiss" id="kissEmoji">💋💗💋</div>
+<h2>MWAHHH! 😚</h2>
+<p>Joel blushes, smiles, and gives his wifey a tiny heart back. 💗</p>
+<p id="finalGift">🎁💌</p>
+<h2>Your final surprise is waiting on Instagram! 📱</h2>
+<p style="line-height:1.8">“I love you, wifeyyy! ❤️ Now, my kunjava, open Instagram… I have one more surprise waiting for you there. 🤭💋”</p>
+<p class="small">Go to Instagram now, Viya — your Joel has something special for you. 💗</p>
+<button onclick="showSection('endingCard')">One last forever promise ❤️</button>
+</section>
+
+<section class="card hidden" id="endingCard">
+<div style="font-size:4rem">🌷🫶🌷</div>
+<h2>To all our chapters still to come…</h2>
+<p style="line-height:1.9">My V, my world — I don't need every day to be perfect. I hope that through every new chapter, we keep choosing kindness, honesty, laughter, and each other.</p>
+<h2>Happy 2nd Anniversary, Viya. I love you. ❤️</h2>
+<p>From your Joel, with all my heart.</p>
+<button onclick="showSection('intro')">Play again 🔁</button>
+</section>
+
+<footer>Made with love for Viya · My V My World · October 23 · 2 years and counting 💗</footer>
+</main>
+
+<script>
+const sections=['intro','gameCard','giftCard','letterCard','mangaCard','callCard','kissCard','endingCard'];
+let level=1,hits=0,needed=3,moveTimer=null,callSeconds=2,callTimer=null;
+const $=id=>document.getElementById(id);
+function showSection(id){
+clearInterval(moveTimer);
+sections.forEach(x=>$(x).classList.toggle('hidden',x!==id));
+window.scrollTo({top:0,behavior:'smooth'});
+if(id==='callCard')startCallClock();else stopCallClock();
+}
+function startGame(){level=1;showSection('gameCard');startLevel();}
+function startLevel(){
+clearInterval(moveTimer);
+hits=0;needed=level===1?3:level===2?4:5;
+$('levelText').textContent='Level '+level+' of 3 — Catch Joel!';
+$('bar').style.width='0%';
+$('joel').classList.remove('hidden');
+$('gift').classList.add('hidden');
+$('tease').textContent=level===1?'Hehe, catch me first, kunjava! 🤭':level===2?'Level 2! Bet you can’t catch me now! 😜':'Final level! Catch me for your surprise, Viya! 💖';
+moveJoel();
+moveTimer=setInterval(moveJoel,level===1?1500:level===2?1050:750);
+}
+function moveJoel(){
+const arena=$('arena'),j=$('joel');
+const maxX=Math.max(20,arena.clientWidth-j.offsetWidth);
+const maxY=Math.max(20,arena.clientHeight-j.offsetHeight);
+j.style.left=Math.random()*maxX+'px';
+j.style.top=Math.random()*maxY+'px';
+}
+function catchJoel(){
+hits++;
+$('bar').style.width=(hits/needed*100)+'%';
+if(hits>=needed){
+clearInterval(moveTimer);
+$('joel').classList.add('hidden');
+$('gift').classList.remove('hidden');
+if(level<3){
+$('tease').textContent='You caught me… for now! 😳';
+setTimeout(()=>{level++;startLevel();},1200);
+}else{
+$('tease').textContent='You caught me AND the gift! 🥹';
+setTimeout(()=>showSection('giftCard'),700);
+}
+}else{
+const messages=['Aiyoo, so close, doll! 💗','You really want your surprise, alle? 👀','Catch your Joel! 🎁','Almost… I’m too fast! 😝','You’re getting good at this! 💞'];
+$('tease').textContent=messages[Math.floor(Math.random()*messages.length)];
+moveJoel();
+}
+}
+function hint(){
+$('tease').textContent='Psst… tap me quickly before I run away! 🤫';
+moveJoel();
+}
+function changeCallLine(){
+const lines=[
+'Wifeyyy… one kiss for your Joel? 😚',
+'I ran all this way with your gift, so I deserve one tiny kiss, alle? 🤭💗',
+'You are my favourite person in every universe. 🥹',
+'Come closer, kunjava… mwah! 💋'
+];
+$('callLine').textContent=lines[Math.floor(Math.random()*lines.length)];
+$('callAvatar').querySelector('span').textContent='🥰';
+}
+function kissJoel(){
+stopCallClock();
+$('callAvatar').querySelector('span').textContent='😍';
+$('callLine').textContent='MWAHHH! I love you, my wifey! 💗 Kiss received! Now open Instagram, kunjava — one last surprise is waiting there. 🤭📱';
+$('kissEmoji').textContent='💋💖😘';
+showSection('kissCard');
+}
+function startCallClock(){
+stopCallClock();callSeconds=2;
+$('callTime').textContent='00:02';
+callTimer=setInterval(()=>{callSeconds++;let m=String(Math.floor(callSeconds/60)).padStart(2,'0');let s=String(callSeconds%60).padStart(2,'0');$('callTime').textContent=m+':'+s;},1000);
+}
+function stopCallClock(){clearInterval(callTimer);}
+window.addEventListener('resize',()=>{if(!$('gameCard').classList.contains('hidden'))moveJoel();});
+</script>
+</body>
+</html>
