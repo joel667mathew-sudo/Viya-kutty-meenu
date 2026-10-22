@@ -219,7 +219,7 @@ footer {
       Play the game, collect your gift, read our story,
       and stay until the very end!
     </p>
-    <p>Ready, wifey? 🤭</p>
+    <p>Ready, hubby? 🤭</p>
     <button onclick="startGame()">Start our adventure 💖</button>
   </section>
 
@@ -237,7 +237,7 @@ footer {
            onclick="catchJoel()">🏃🏻‍♂️</div>
     </div>
 
-    <p class="small">Don't let your hubby escape, Meenu! 😂❤️</p>
+    <p class="small">Don't let your wifeyy escape, Meenu! 😂❤️</p>
     <button id="nextLevel" class="hidden" onclick="advanceLevel()">
       Next level 💞
     </button>
@@ -245,8 +245,8 @@ footer {
 
   <!-- GIFT -->
   <section class="card hidden" id="giftCard">
-    <h2>You caught your hubby! 🎉</h2>
-    <p>Three levels completed! Your reward is waiting, doll.</p>
+    <h2>You caught your wifeyy! 🎉</h2>
+    <p>Three levels completed! Your reward is waiting, bommakutty.</p>
     <div id="gift" onclick="openGift()">🎁</div>
     <p id="giftText">Tap the gift to open it! 💗</p>
     <button id="continueGift" class="hidden" onclick="showLetter()">
@@ -263,7 +263,7 @@ Who would have thought that two strangers meeting on Y99 would become this impor
 
 We started chatting, exchanged Instagram, and somehow our conversations turned into nights full of words, laughter, feelings and love.
 
-You became my girlfriend, my wife, my best friend, my master and my everything. You accepted me as your wife, and that memory will always be special to me. 🥹❤️
+You became my girlfriend, my wife,my hubby, my best friend, my master and my everything. You accepted me as your wife, and that memory will always be special to me. 🥹❤️
 
 You are my doll, my bommakutty, my kunjava, my shuttumani and my Meenu.
 
@@ -275,10 +275,10 @@ My wish isn't just to celebrate two years. I want to keep creating little memori
 
 No website or gift could fully explain how much you mean to me.
 
-Happy anniversary, my wifey. ❤️
+Happy anniversary, my hubby. ❤️
 
 Forever your Joel,
-Your hubby, your love, your person. 💋</div>
+Your wifeyy, your love, your person. 💋</div>
 
     <button onclick="showManga()">Read our manga 📖</button>
   </section>
@@ -339,12 +339,12 @@ Your hubby, your love, your person. 💋</div>
   <!-- SIMULATED VIDEO CALL -->
   <section class="card hidden" id="callCard">
     <h2>📱 Incoming video call...</h2>
-    <p>Your hubby Joel is calling you, Viya! 💗</p>
+    <p>Your wifeyy Joel is calling you, Viya! 💗</p>
 
     <div class="call-screen">
       <div class="call-avatar">👦🏻💗</div>
       <h3>Joel ❤️</h3>
-      <p id="callStatus">Waiting for my beautiful wifey to answer...</p>
+      <p id="callStatus">Waiting for my beautiful hubby to answer...</p>
 
       <div class="call-controls">
         <button onclick="answerCall()">📹 Answer</button>
@@ -365,7 +365,7 @@ Your hubby, your love, your person. 💋</div>
     <div class="call-screen">
       <div class="call-avatar">👦🏻😘</div>
       <p id="kissDialogue">
-        "Wifeyyy! Give your hubby a kiss before I give you
+        "Hubby! Give your wifeyy a kiss before I give you
         your final surprise! 🤭❤️"
       </p>
 
@@ -377,7 +377,7 @@ Your hubby, your love, your person. 💋</div>
         <div class="heart">💋💋💋</div>
         <p class="final-message">MWAHHH! 💋</p>
         <p>
-          I love you, wifey! ❤️
+          I love you, hubby! ❤️
           Now, my kunjava, open Instagram…
           I have one more surprise waiting for you there. 🤭❤️
         </p>
@@ -404,7 +404,7 @@ Your hubby, your love, your person. 💋</div>
       You are my favourite chapter, my favourite person,
       and the girl I want beside me in all the chapters ahead.
     </p>
-    <p class="final-message">I love you, my wifey. Forever. ❤️</p>
+    <p class="final-message">I love you, my hubby. Forever. ❤️</p>
     <p>— Your Joel, always and always 💋</p>
     <button onclick="restartGame()">Play our adventure again 💗</button>
   </section>
@@ -450,7 +450,7 @@ function setupLevel() {
   const instructions = [
     "Tap Joel before he runs away. Catch him 5 times!",
     "Level 2! Joel is getting faster. Catch him 5 times!",
-    "Final level! Catch your sneaky hubby 5 more times!"
+    "Final level! Catch your sneaky wifeyy 5 more times!"
   ];
 
   document.getElementById("gameInstruction").textContent =
@@ -478,7 +478,7 @@ function catchJoel() {
 
   if (score >= target) {
     document.getElementById("gameInstruction").textContent =
-      "You caught me! Awww, my wifey is too good! 💋";
+      "You caught me! Awww, my hubby is too good! 💋";
 
     const next = document.getElementById("nextLevel");
     next.classList.remove("hidden");
@@ -518,19 +518,19 @@ function showCall() {
 
 function answerCall() {
   document.getElementById("callStatus").textContent =
-    "Connected! Joel is smiling at his wifey. 🥹❤️";
+    "Connected! Joel is smiling at his hubby. 🥹❤️";
 
   showOnly("kissCard");
 }
 
 function declineCall() {
   document.getElementById("callStatus").textContent =
-    "Joel is waiting patiently for his wifey! Answer when you're ready. ❤️";
+    "Joel is waiting patiently for his hubby! Answer when you're ready. ❤️";
 }
 
 function giveKiss() {
   document.getElementById("kissDialogue").textContent =
-    "MWAHHH! 💋 I love you, wifey!";
+    "MWAHHH! 💋 I love you, hubby!";
 
   document.getElementById("kissButton").classList.add("hidden");
   document.getElementById("kissResult").classList.remove("hidden");
