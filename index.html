@@ -1,0 +1,694 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f7c5dc">
+<title>My Viyakutty | Forever Yours 💗</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --pink: #e75491;
+    --dark: #922653;
+    --light: #fff0f6;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg,#fff0f6,#ffd6e7,#fff7fa);
+    color: var(--dark);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    background: radial-gradient(circle,#fff 0%,#ffd6e7 65%,#f8b9d3 100%);
+}
+
+.crown {
+    font-size: 85px;
+    animation: float 3s infinite;
+}
+
+.hero h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(60px,12vw,110px);
+    color: var(--pink);
+    text-shadow: 2px 4px 10px #e7549130;
+}
+
+.hero h2 {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    max-width: 550px;
+    margin: 20px;
+    line-height: 1.8;
+}
+
+.btn {
+    background: var(--pink);
+    color: white;
+    padding: 14px 27px;
+    border-radius: 35px;
+    margin: 12px;
+    font-size: 15px;
+    box-shadow: 0 7px 20px #e7549140;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px) scale(1.04);
+    background: #c82f75;
+}
+
+section {
+    padding: 75px 18px;
+    text-align: center;
+}
+
+.royal {
+    background: linear-gradient(135deg,#f9c5da,#fff0f6);
+}
+
+.heading {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(43px,8vw,65px);
+    color: var(--pink);
+    margin-bottom: 25px;
+}
+
+.card {
+    max-width: 780px;
+    margin: 22px auto;
+    padding: 30px;
+    background: #ffffffc9;
+    border: 1px solid #ffffff;
+    border-radius: 27px;
+    box-shadow: 0 12px 35px #b83d7220;
+    backdrop-filter: blur(8px);
+}
+
+.card p {
+    line-height: 2;
+}
+
+.big {
+    font-size: 65px;
+    margin: 15px;
+    animation: pulse 2s infinite;
+}
+
+.letter {
+    text-align: left;
+    white-space: pre-line;
+}
+
+.timeline {
+    display: grid;
+    gap: 17px;
+}
+
+.timeline-item {
+    padding: 20px;
+    border-radius: 17px;
+    background: #fff0f6;
+    border-left: 5px solid var(--pink);
+    text-align: left;
+}
+
+.contract {
+    text-align: left;
+}
+
+.contract p {
+    margin: 13px 0;
+}
+
+.stick {
+    font-size: 85px;
+    display: block;
+    animation: wiggle 1.3s infinite;
+}
+
+.reveal {
+    background: #fff0f6;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 22px;
+    animation: appear .5s ease;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.reveal h2, .reveal h1 {
+    color: var(--pink);
+    margin: 12px 0;
+}
+
+footer {
+    background: #f2b4d0;
+    padding: 40px 15px;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    z-index: 99;
+    pointer-events: none;
+    animation: rise 5s linear forwards;
+}
+
+@keyframes float {
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes pulse {
+    50% { transform: scale(1.13); }
+}
+
+@keyframes wiggle {
+    0%,100% { transform: rotate(-9deg); }
+    50% { transform: rotate(9deg); }
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rise {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media(max-width:600px) {
+    section { padding: 55px 14px; }
+    .card { padding: 22px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- WELCOME -->
+<header class="hero">
+
+    <div class="crown">👑</div>
+
+    <h1>My Viyakutty</h1>
+
+    <h2>MY HUBBY • MY QUEEN • MY MASTER</h2>
+
+    <p>
+        A little universe made by your wifey,
+        for the most precious person in her world.
+    </p>
+
+    <h3>💗 2 YEARS & 1 MONTH 💗</h3>
+
+    <p>23 November — Our Special Day</p>
+
+    <button class="btn" onclick="openGift()">
+        Open Your Royal Gift 💌
+    </button>
+
+</header>
+
+<!-- KINGDOM -->
+<section class="royal">
+
+    <h2 class="heading">Your Royal Kingdom 👑</h2>
+
+    <div class="card">
+
+        <div class="big">👑💗</div>
+
+        <h2>Her Majesty Viyakutty</h2>
+
+        <p>
+            My Queen. My Hubby. My Master.
+        </p>
+
+        <br>
+
+        <p>
+            You rule my heart, own my favourite thoughts,
+            and make my ordinary days beautiful.
+        </p>
+
+        <br>
+
+        <p>
+            I am your wifey, your little troublemaker,
+            your biggest admirer and your forever person.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- LOVE STORY -->
+<section>
+
+    <h2 class="heading">Our Love Story 🌷</h2>
+
+    <div class="card timeline">
+
+        <div class="timeline-item">
+            <h3>🌸 The Beginning</h3>
+            <p>
+                We met on Y99. Who knew a little conversation
+                would become such a beautiful love story?
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>💌 The Instagram Days</h3>
+            <p>
+                You gave me your Instagram, and our conversations
+                became something I never wanted to end.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>🌙 Endless Conversations</h3>
+            <p>
+                All-night talks, silly jokes, sweet moments
+                and a bond that became our own little universe.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>💗 2 Years & 1 Month</h3>
+            <p>
+                Still my favourite person.
+                Still my hubby.
+                Still the one I choose.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LOVE LETTER -->
+<section class="royal">
+
+    <h2 class="heading">A Letter From Your Wifey 💌</h2>
+
+    <div class="card letter">
+
+My dearest Viyakutty,
+
+Happiest 2 years and 1 month to us, my precious hubby! 🥹💗
+
+I don't know how to explain how much you mean to me.
+
+You are not just my partner.
+You are my hubby, my Queen, my Master,
+my best friend, my happiness and my safe place.
+
+I love calling you my hubby.
+I love being your wifey.
+I love teasing you, annoying you,
+asking for your attention and stealing your kisses.
+
+Sometimes I am stubborn.
+Sometimes I am naughty.
+Sometimes I don't listen properly. 🤭
+
+But one thing will never change:
+I will always choose you.
+
+I want to see you happy.
+I want to celebrate your little victories.
+I want to hold your hand through difficult days.
+I want to make countless memories with you.
+
+If I could restart my life a thousand times,
+I would still search for you.
+
+More months, more years,
+more laughter, more cuddles,
+more kisses and more adventures.
+
+I love you, my Viyakutty.
+
+Forever your wifey,
+Your little troublemaker 💗
+
+    </div>
+
+</section>
+
+<!-- QUEEN -->
+<section>
+
+    <h2 class="heading">Three Royal Titles 👑</h2>
+
+    <div class="card">
+        <div class="big">👑</div>
+        <h2>My QUEEN</h2>
+        <p>You deserve the biggest crown in my heart.</p>
+    </div>
+
+    <div class="card">
+        <div class="big">💍</div>
+        <h2>My HUBBY</h2>
+        <p>My favourite person, my love, my forever.</p>
+    </div>
+
+    <div class="card">
+        <div class="big">🎀</div>
+        <h2>My MASTER</h2>
+        <p>You make the rules in our silly little love kingdom.</p>
+    </div>
+
+</section>
+
+<!-- CONTRACT -->
+<section class="royal">
+
+    <h2 class="heading">Wifey's Obedience Contract 📜</h2>
+
+    <div class="card contract">
+
+        <h3>Officially signed by your wifey 🤭</h3>
+
+        <p>☑ I shall love my hubby every day.</p>
+        <p>☑ I shall respect my Queen and Master.</p>
+        <p>☑ I shall report for hugs whenever summoned.</p>
+        <p>☑ I shall give unlimited kisses.</p>
+        <p>☑ I shall try to behave myself.</p>
+        <p>☑ I shall accept silly royal warnings.</p>
+        <p>☑ I shall never forget that you are my everything.</p>
+        <p>☑ I shall remain your wifey forever.</p>
+
+        <br>
+
+        <h3>Wifey's Signature: 💗</h3>
+        <p>Your devoted little wife.</p>
+
+    </div>
+
+</section>
+
+<!-- PINK STICK -->
+<section>
+
+    <h2 class="heading">The Royal Pink Stick 🎀</h2>
+
+    <div class="card">
+
+        <span class="stick">🎀🪄</span>
+
+        <h2>Attention, Naughty Wifey!</h2>
+
+        <p>
+            When your wifey becomes too stubborn,
+            your Majesty may issue a dramatic pink-stick warning!
+        </p>
+
+        <p>
+            Warning: This magical stick is only for pretend,
+            silly teasing and royal comedy. 😂
+        </p>
+
+        <button class="btn" onclick="punishment()">
+            My Hubby, Summon Me! 🤭
+        </button>
+
+        <div id="punishment" class="reveal hidden">
+
+            <h2>🚨 ROYAL WARNING 🚨</h2>
+
+            <div class="big">🎀🪄</div>
+
+            <p>
+                Your wifey has been caught misbehaving!
+            </p>
+
+            <p>
+                Her Majesty Viyakutty has issued a pink-stick warning!
+            </p>
+
+            <h2>🫡 WIFEY SURRENDERS!</h2>
+
+            <p>
+                Okayyyyy hubby! 😭🤭
+                I surrender!
+                I promise to behave!
+            </p>
+
+            <p>
+                But I demand 10 hugs,
+                100 kisses and unlimited cuddles! 💋
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- KISS -->
+<section class="royal">
+
+    <h2 class="heading">A Special Kiss For You 💋</h2>
+
+    <div class="card">
+
+        <div class="big">😘</div>
+
+        <p>
+            Your wifey has a secret present
+            for her handsome hubby.
+        </p>
+
+        <button class="btn" onclick="kiss()">
+            Claim Your Kiss 💋
+        </button>
+
+        <div id="kiss" class="reveal hidden">
+
+            <h1>MWAHHHHH! 💋💋💋</h1>
+
+            <p>
+                One forehead kiss,
+                one cheek kiss,
+                and a million kisses for my hubby.
+            </p>
+
+            <h2>I LOVE YOUUU! 💗</h2>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FINAL PROMISE -->
+<section>
+
+    <h2 class="heading">My Forever Promise ♾️</h2>
+
+    <div class="card">
+
+        <div class="big">💍</div>
+
+        <p>
+            I cannot promise every day will be perfect.
+        </p>
+
+        <p>
+            But I promise to keep loving you,
+            keep choosing you, keep understanding you
+            and keep growing with you.
+        </p>
+
+        <br>
+
+        <p>
+            Through distance, difficult days,
+            silly fights and beautiful memories,
+            I want us to keep finding our way back to each other.
+        </p>
+
+        <br>
+
+        <h2>It's always you, Viyakutty. 💗</h2>
+
+    </div>
+
+</section>
+
+<!-- FINAL SURPRISE -->
+<section class="royal">
+
+    <h2 class="heading">One Last Surprise 🥹</h2>
+
+    <div class="card">
+
+        <p>
+            My hubby, my Queen, my Master...
+        </p>
+
+        <p>
+            Your wifey has one final confession.
+        </p>
+
+        <button class="btn" onclick="finalSurprise()">
+            Open My Heart 💗
+        </button>
+
+        <div id="final" class="reveal hidden">
+
+            <div class="big">👑💗</div>
+
+            <h1>VIYAKUTTYYYY!</h1>
+
+            <p>
+                I am your wifey.
+                You are my hubby.
+                You are my Queen.
+                You are my Master.
+                You are my whole little world.
+            </p>
+
+            <br>
+
+            <h2>HAPPY 2 YEARS & 1 MONTH!</h2>
+
+            <h1>I LOVE YOU FOREVER! 💋</h1>
+
+            <p>
+                Now call your wifeyyyyy! 🤭
+            </p>
+
+            <a href="tel:" class="btn"
+               style="display:inline-block;text-decoration:none;">
+                Call Your Wifey 📞
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    Forever Your Wifey 💗
+    <br>
+    Her Majesty Viyakutty 👑
+    <br>
+    23 November • 2 Years & 1 Month
+</footer>
+
+<script>
+
+function scrollToSection(selector) {
+    document.querySelector(selector).scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function openGift() {
+    scrollToSection(".royal");
+    createHearts(20);
+}
+
+function revealBox(id) {
+    const box = document.getElementById(id);
+    box.classList.remove("hidden");
+    createHearts(25);
+}
+
+function punishment() {
+    revealBox("punishment");
+}
+
+function kiss() {
+    revealBox("kiss");
+}
+
+function finalSurprise() {
+    revealBox("final");
+    setTimeout(() => {
+        document.getElementById("final").scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+    }, 150);
+}
+
+function createHearts(amount) {
+
+    const symbols = ["💗","💕","💖","💘","🌸","💋"];
+
+    for (let i = 0; i < amount; i++) {
+
+        const heart = document.createElement("span");
+
+        heart.className = "heart";
+
+        heart.textContent =
+            symbols[Math.floor(Math.random() * symbols.length)];
+
+        heart.style.left = Math.random() * 100 + "vw";
+
+        heart.style.fontSize =
+            (16 + Math.random() * 25) + "px";
+
+        heart.style.animationDuration =
+            (3 + Math.random() * 4) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 7500);
+    }
+}
+
+setInterval(() => createHearts(1), 1800);
+
+</script>
+
+</body>
+</html>
